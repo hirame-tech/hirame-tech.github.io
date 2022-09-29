@@ -142,22 +142,22 @@ Adafruit_MAX31855 <span class="token function">thermocouple</span><span class="t
 <p>基本的に上述のような問題から温度が閾値以下ならON、閾値以上ならOFFという単純な制御となっており、変数stageで現在のリフローステージを管理しています。</p>
 <ul>
 <li>stage = 1
-最初の温めステージで、定数STAGE1_TEMPで指定した温度まで温めます。
-ステージ移動要件は温度がSTAGE1_TEMPを超えることです。</li>
+<br>最初の温めステージで、定数STAGE1_TEMPで指定した温度まで温めます。
+<br>ステージ移動要件は温度がSTAGE1_TEMPを超えることです。</li>
 <li>stage = 2
-ある程度の時間温めることで温度ムラを抑えるステージで、定数STAGE2_TEMP前後で温度を保ちます。
-ステージ移動要件は、stage2開始後100秒(60s~120sだったので)を超えることです。</li>
+<br>ある程度の時間温めることで温度ムラを抑えるステージで、定数STAGE2_TEMP前後で温度を保ちます。
+<br>ステージ移動要件は、stage2開始後100秒(60s~120sだったので)を超えることです。</li>
 <li>stage = 3
-2回目の温めステージで、定数STAGE3_TEMPで指定した温度まで温めます。
-ステージ移動要件は温度がSTAGE3_TEMPを超えることです。</li>
+<br>2回目の温めステージで、定数STAGE3_TEMPで指定した温度まで温めます。
+<br>ステージ移動要件は温度がSTAGE3_TEMPを超えることです。</li>
 <li>stage = 4
-リフローステージで、STAGE4_TEMP前後の温度で温めます。
-ステージ移動要件はstage3開始後20秒を超えることです。</li>
+<br>リフローステージで、STAGE4_TEMP前後の温度で温めます。
+<br>ステージ移動要件はstage3開始後20秒を超えることです。</li>
 <li>stage = 5
-冷やすステージです。
-ステージ移動要件は温度が40度を下回ることです。</li>
+<br>冷やすステージです。
+<br>ステージ移動要件は温度が40度を下回ることです。</li>
 <li>stage = 6
-終了表示をして無限ループに入ります</li>
+<br>終了表示をして無限ループに入ります</li>
 </ul>
 <h2>終わりに</h2>
-<p>とりあえず動く形になったので、作らなければならないものを作って少し余裕ができたら、基板化・ケース制作・LCD表示とかまで実装したいです。</p></div></main><footer class="footer">© <!-- -->2022<!-- --> hirame&#x27;s memopad</footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/post/Hot-plate-reflow/";window.___webpackCompilationHash="4504f4028b1f61cbce79";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-82df740e7cad994d0af0.js"],"app":["/app-bad3e38883a1a725299c.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e73d4c6f3fafbce420ac.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1d7d3f297be5d57cc282.js"],"component---src-templates-post-js":["/component---src-templates-post-js-5b0cd8964cbd36436853.js"]};/*]]>*/</script><script src="/polyfill-82df740e7cad994d0af0.js" nomodule=""></script><script src="/app-bad3e38883a1a725299c.js" async=""></script><script src="/framework-ece53a4dfa3f421a9587.js" async=""></script><script src="/webpack-runtime-ef72afb328403a1496ed.js" async=""></script></body></html>
+<p>とりあえず動く形になったので、作らなければならないものを作って少し余裕ができたら、基板化・ケース制作・LCD表示とかまで実装したいです。</p></div></main><footer class="footer">© <!-- -->2022<!-- --> hirame&#x27;s memopad</footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/post/Hot-plate-reflow/";window.___webpackCompilationHash="a0048283c9443857ab7e";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-82df740e7cad994d0af0.js"],"app":["/app-bad3e38883a1a725299c.js"],"component---src-pages-404-js":["/component---src-pages-404-js-e73d4c6f3fafbce420ac.js"],"component---src-pages-index-js":["/component---src-pages-index-js-1d7d3f297be5d57cc282.js"],"component---src-templates-post-js":["/component---src-templates-post-js-5b0cd8964cbd36436853.js"]};/*]]>*/</script><script src="/polyfill-82df740e7cad994d0af0.js" nomodule=""></script><script src="/app-bad3e38883a1a725299c.js" async=""></script><script src="/framework-ece53a4dfa3f421a9587.js" async=""></script><script src="/webpack-runtime-ef72afb328403a1496ed.js" async=""></script></body></html>
